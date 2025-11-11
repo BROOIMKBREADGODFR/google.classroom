@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eaglercraft 1.12.2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Optional favicon to remove console 404 -->
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* Fullscreen canvas + loading overlay */
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100%;
+            background: black;
+        }
+        #loading {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: sans-serif;
+            font-size: 24px;
+            background: black;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading overlay -->
+    <div id="loading">Loading Eaglercraft...</div>
+
+    <!-- ================== PASTE YOUR FULL EAGLERCRAFT HTML BELOW THIS LINE ================== -->
+    <!-- Example: if your HTML starts with <canvas> or <script> tags, paste everything here -->
+    <!-- Make sure you leave the div#loading above and the script below untouched -->
+    <!-- ================================================================================ -->
+
+    <!-- ================== END OF PASTE AREA ================== -->
+
+    <script>
+        // Hide loading overlay once the game initializes
+        window.addEventListener('load', () => {
+            const loading = document.getElementById('loading');
+            if (loading) loading.style.display = 'none';
+        });
+
+        // If your Eaglercraft scripts run on window.onload, they should still work
+        // Alternatively, move inline scripts from your HTML here if needed
+    </script>
+</body>
+</html>
